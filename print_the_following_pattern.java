@@ -3,13 +3,9 @@ class Love{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for(int i = 0 ; i < n ; i++){
-            for(int j = 0 ; j < n ; j++){
-                if(i==j){
-                    System.out.format("0");
-                }
-                else
-                System.out.format("x");
+        for(int i = n ; i > 0 ; i--){
+            for(int j = n ; j > 0 ; j--){
+                System.out.format("%d ",j);
             }
             System.out.format("
 ");
