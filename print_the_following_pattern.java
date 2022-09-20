@@ -5,11 +5,11 @@ class Love{
         int n = sc.nextInt();
         for(int i = 0 ; i < n ; i++){
             for(int j = 0 ; j < n ; j++){
-                if(i==j || j==0 || j==n-1){
-                    System.out.format("* ");
+                if(i==j || j+i==n-1){
+                    System.out.format("x");
                 }
                 else
-                System.out.format("  ");
+                System.out.format("0");
             }
             System.out.format("
 ");
