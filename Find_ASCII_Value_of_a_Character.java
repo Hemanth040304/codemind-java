@@ -1,9 +1,9 @@
 import java.util.*;
-class Love{
+class Code{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        char s = sc.next().charAt(0);
-        int c=s;
-        System.out.format("%d",c);
+        String s = sc.next();
+        int n = s.charAt(0);
+        System.out.format("%d",n);
     }
 }
