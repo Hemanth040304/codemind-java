@@ -8,10 +8,10 @@ class Code{
                 System.out.format(" ");
             }
             for(int j = i ; j > 0 ; j--){
-                System.out.format("%d",j);
+                System.out.format("%d",i+1);
             }
             for(int j = 0 ; j < i+1 ; j++){
-                System.out.format("%d",j);
+                System.out.format("%d",i+1);
             }
             System.out.format("
 ");
