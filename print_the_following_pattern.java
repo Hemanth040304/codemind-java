@@ -3,19 +3,17 @@ class Code{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for(int i = n ; i >= 1 ; i--){
-            for(int j = 1 ; j <= i-1 ; j++){
-                System.out.printf(" ");
+        for(int i = 0 ; i < n ; i++){
+            for(int j = 0 ; j < n-(i+1) ; j++){
+                System.out.format(" ");
             }
-            for(int k = 1 ; k <= n ; k++){
-                if(i==n || i==1 || k==1 || k==n){
-                    System.out.format("*");
-                }
-                else{
-                    System.out.printf(" ");
-                }
+            for(int j = i ; j > 0 ; j--){
+                System.out.format("%d",j);
             }
-            System.out.printf("
+            for(int j = 0 ; j < i+1 ; j++){
+                System.out.format("%d",j);
+            }
+            System.out.format("
 ");
         }
     }
